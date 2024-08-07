@@ -1,0 +1,88 @@
+.home_news {
+    display: flex;
+    justify-content: space-between;
+    padding: 80px 200px;
+    /* background-color: #f9f9f9; */
+}
+
+.home_news_photo {
+    position: relative;
+}
+
+.photo_wrapper {
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.photo1 img{
+    max-width: 400px;
+    max-height: 400px;
+    border: 10px solid white;
+}
+
+.photo2 img{
+    max-width: 200px;
+    max-height: 200px;
+    border: 10px solid white;
+}
+.photo1 {
+    z-index: 1;
+    left: -30px;
+    top: 1px;
+    border: 10px solid #FF7F50; /* Coral color */
+}
+
+
+.photo2 {
+    z-index: 2;
+    left: 200px; /* Adjust this value to overlap */
+    top: 230px;  /* Adjust this value to overlap */
+    border: 10px solid #FFD700; /* Gold color */
+}
+
+.photo_wrapper img {
+    /* max-height: 200px;
+    max-width: 200px; */
+    border-radius: 50%;
+}
+
+.home_news_info {
+    margin-left: 100px;
+    max-width: 400px;
+}
+
+.text_header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #FF6347; /* Tomato color */
+    margin-bottom: 40px;
+}
+
+.text_body ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.text_body li {
+    list-style-image: url(../styles/brain.png);
+}
+
+.text_body p {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.home_news_price{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    text-align: right;
+    background-color: rgb(248, 168, 197);
+}
+
+.home_news_price p{
+    font-size: 18px;
+    font-weight: 600;
+}
