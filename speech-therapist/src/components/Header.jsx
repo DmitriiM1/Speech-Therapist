@@ -1,0 +1,93 @@
+import React from "react";
+import "../styles/header_footer.css";
+import logo from "../assets/header_footerIMG/Colorful Pastel Kindergarten Logo.png";
+
+
+import { Link, useNavigate, useLocation } from 'react-router-dom';
+import VideoCarousel from "./PhotoCarousel";
+
+
+
+const Header = () => {
+    return (
+        <div>
+            <div className="wrapper">
+                <div className="header_wrapper">
+                    <VideoCarousel />
+                </div>
+
+                <header>
+                    <div className="header_center">
+
+                        <div className="header_info">
+
+                            <div className="header_logo">
+                                <Link to="/"><img src={logo} alt="Мир Речи" /></Link>
+                            </div>
+
+                            <div className="header_address">
+                                <p>Люберцы, ул. Лётчика Ларюшина, 6, корп. 2</p>
+                            </div>
+
+                            <div className="header_contact">
+                                <p>+7333-333-33-33</p>
+                                <p>test@gmail.com</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <nav className="nav_links">
+                        <ul className="header_list">
+                            <li className="header_links">
+                                <Link to="">
+                                    <p>Услуги и Цены</p>
+                                </Link>
+                            </li>
+                            <li className="header_links">
+                                <Link to="">
+                                    <p>Родителям</p>
+                                </Link>
+                            </li>
+                            <li className="header_links">
+                                <Link to="">
+                                    <p>О Нас</p>
+                                </Link>
+                            </li>
+                            <li className="header_links">
+                                <Link to="">
+                                    <p>Наши Специалисты</p>
+                                </Link>
+                            </li>
+                            <li className="header_links">
+                                <Link to="">
+                                    <p>Отзывы</p>
+                                </Link>
+                            </li>
+                            <li className="header_links">
+                                <Link to="">
+                                    <p>Контакты</p>
+                                </Link>
+                            </li>
+                        </ul>
+                    </nav>
+                </header>
+
+                <div className="home_content">
+                    <div className="home_text">
+                        <p className="home_text_first">Мир Речи</p>
+                        <p className="home_text_second">Центр Логопедии и Дефектологии</p>
+                    </div>
+                    <div className="home_button">
+                        <p>Записаться</p>
+                    </div>
+                </div>
+
+
+                
+            </div>
+        </div>
+    );
+};
+
+export default Header

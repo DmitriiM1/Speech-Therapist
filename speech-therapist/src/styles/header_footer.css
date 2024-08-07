@@ -1,0 +1,162 @@
+
+/* .wrapper{
+    height: 800px;
+    width: 1300px;
+    background: url(../assets/header_footerIMG/vecteezy_teen-girl-turning-pages-while-reading-a-book-during_3220596.mp4);
+    margin: 0 auto;
+} */
+
+.wrapper {
+    /* max-width: 1300px; */
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+header{
+    position: absolute;
+    top: 2px;
+    left: 1px;
+    right: 1px;
+}
+
+.header-wrapper {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.header_center{
+    /* background-color: rgba(192, 192, 192, 0.7);
+    box-shadow: -3px -2px 5px 0px rgba(0,0,0,0.75) inset; */
+    backdrop-filter: blur(70px);
+    box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.649) inset;
+    border: 2px solid rgba(176, 176, 176, 0.18);
+}
+
+.header_info{
+    max-height: 130px;
+    max-width: 1300px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_info p {
+ margin: 0;
+}
+
+.header_address{
+    /* width: 340px; */
+}
+
+.header_address p{
+    /* color: rgb(227, 233, 59); */
+    background: #E3E93B;
+    background: linear-gradient(to right, #E3E93B 0%, #e0bd20 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.header_logo{
+    
+}
+.header_logo img{
+    max-height: 80px;
+    
+}
+
+.header_contact{
+    /* width: 340px; */
+    text-align: right;
+
+}
+
+.header_contact p{
+    font-size: 18px;
+    background: #E3E93B;
+    background: linear-gradient(to right, #E3E93B 0%, #e0bd20 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav_links{
+    background-color: rgba(185, 185, 185, 0.809);
+    /* backdrop-filter: blur(90px); */
+    /* box-shadow: 0px 5px 15px rgba(236, 236, 236, 0.242); */
+    /* border: 2px solid rgba(84, 84, 84, 0.2); */
+
+
+}
+
+.header_list{
+    max-width: 1300px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.header_links a {
+    text-decoration: none;
+    color: rgb(31, 12, 289);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.header_links p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.home_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    transform: translate(-50%, -50%); /* Centering using transform */
+    text-align: center;
+}
+
+.home_text{
+
+}
+
+.home_text_first{
+    font-size: 75px;
+    color: rgb(295, 423, 10);
+    font-weight: 600;
+    text-shadow: 5px -2px 2px rgba(0, 0, 0, 0.519);
+}
+
+.home_text_second{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(295, 423, 10);
+    text-shadow: 4px -3px 3px rgba(0,0,0,0.6);
+}
+
+.home_button{
+    max-width: 140px;
+    /* background-color: rgb(253, 180, 74); */
+    background-color: rgb(31, 102, 279);;
+    border-radius: 20px;
+    text-align: center;
+
+}
+
+.home_button p{
+    margin: 0;
+    padding: 10px 10px;
+    font-size: 20px;
+    color: white;
+}
