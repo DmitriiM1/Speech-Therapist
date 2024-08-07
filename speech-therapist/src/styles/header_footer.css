@@ -44,12 +44,26 @@ header{
     justify-content: space-between;
     align-items: center;
 }
+.header_info a{
+    text-decoration: none;
+}
 .header_info p {
  margin: 0;
 }
 
 .header_address{
     /* width: 340px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_address img{
+}
+
+.header_address_icon img{
+    height: 30px;
+    margin-right: 20px;
 }
 
 .header_address p{

@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/header_footer.css";
 import logo from "../assets/header_footerIMG/Colorful Pastel Kindergarten Logo.png";
+import mapMarker from "../assets/header_footerIMG/map_marker_icon2.svg"
+
 
 
 import { Link, useNavigate, useLocation } from 'react-router-dom';
@@ -25,9 +27,14 @@ const Header = () => {
                                 <Link to="/"><img src={logo} alt="Мир Речи" /></Link>
                             </div>
 
-                            <div className="header_address">
-                                <p>Люберцы, ул. Лётчика Ларюшина, 6, корп. 2</p>
-                            </div>
+                            <Link to="https://yandex.ru/maps/org/mir_rechi/104942983328/?ll=37.864169%2C55.677296&utm_source=share&z=16" target="_blank">
+                                <div className="header_address">
+                                    <div className="header_address_icon">
+                                        <img src={mapMarker} alt="mapMarker" />
+                                    </div>
+                                    <p>Люберцы, ул. Лётчика Ларюшина, 6, корп. 2</p>
+                                </div>
+                            </Link>
 
                             <div className="header_contact">
                                 <p>+7333-333-33-33</p>
@@ -84,7 +91,7 @@ const Header = () => {
                 </div>
 
 
-                
+
             </div>
         </div>
     );
