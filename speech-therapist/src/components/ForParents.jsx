@@ -8,6 +8,9 @@ import photoChildren2 from "../assets/forParentsIMG/children-playing2.jpg";
 import photoChildren3 from "../assets/forParentsIMG/children-playing3.jpg";
 import arrow1 from "../assets/forParentsIMG/down_icon.png"
 
+import docAgreement from "../assets/documents/docAgreement.docx";
+import docRules from "../assets/documents/docRules.docx";
+
 
 
 const ForParents = () => {
@@ -18,7 +21,26 @@ const ForParents = () => {
                 <img src={arrow1} alt="" />
                 <h4>Договор, правила посещения центра</h4>
             </div>
-            <div className="wrapper">
+            <div className="forparents_rules">
+                <h4>Узнайте больше информации о правилах и ценах здесь:</h4>
+                <div className="forparents_rules_wrapper">
+                    <a href={docAgreement}>
+                        <div className="button_agreement">
+                            <img src="" alt="" />
+                            <p>Договор с родителями</p>
+                        </div>
+                    </a>
+
+                    <a href={docRules}>
+                        <div className="button_rules">
+                            <img src="" alt="" />
+                            <p>Правила посещения занятий логопеда-дефектолога</p>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+            <div className="parentWrapper">
                 <div className="forparents_text">
                     <h2>Как подготовиться к первой встрече с логопедом:</h2>
                     <ul>
