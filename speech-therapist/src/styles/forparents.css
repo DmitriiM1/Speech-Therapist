@@ -77,10 +77,10 @@
     justify-content: center;
     width: 400px;
     /* background-color: #A0ACAC; */
-    background: linear-gradient(45deg, rgba(142,200,200,1) 42%, rgba(248,168,197,1) 100%);
+    background: linear-gradient(45deg, rgba(248,168,197,1) 2%, rgba(142,200,200,1) 60%);
     padding: 20px;
-    border-top-right-radius: 80px;
-    border-bottom-left-radius: 80px;
+    border-top-left-radius: 80px;
+    border-bottom-right-radius: 80px;
     box-shadow: -3px -3px 5px 4px #9494947d inset;
     transition: box-shadow .6s ease, transform 0.6s ease;
 }

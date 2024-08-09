@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import News from "./components/News";
 import Services from "./components/Services";
 import ForParents from "./components/ForParents";
+import Reviews from "./components/Reviews";
 
 
 
@@ -14,6 +15,7 @@ function MainRouter() {
       <News />
       <Services />
       <ForParents />
+      <Reviews />
     </div>
   );
 }

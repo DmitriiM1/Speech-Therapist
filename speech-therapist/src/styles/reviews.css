@@ -1,0 +1,19 @@
+.reviews-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .reviews-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .review {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
