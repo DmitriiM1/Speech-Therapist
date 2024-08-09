@@ -1,15 +1,21 @@
 import React from "react";
 import "../styles/forparents.css";
-import photoParents1 from "../assets/forParentsIMG/parents-photo1.jpg";
 import photoParents2 from "../assets/forParentsIMG/parents-photo2.jpg";
+import photoParents1 from "../assets/forParentsIMG/parents-photo1.jpg";
 import photoChild from "../assets/forParentsIMG/child-fun.jpg";
 import photoChildren1 from "../assets/forParentsIMG/children-playing1.jpg";
 import photoChildren2 from "../assets/forParentsIMG/children-playing2.jpg";
-import photoChildren3 from "../assets/forParentsIMG/children-playing3.jpg";
 import arrow1 from "../assets/forParentsIMG/down_icon.png"
+import docIcon from "../assets/forParentsIMG/document_icon.svg"
+import docIcon2 from "../assets/forParentsIMG/file_document_icon.svg"
 
 import docAgreement from "../assets/documents/docAgreement.docx";
 import docRules from "../assets/documents/docRules.docx";
+
+import docAgreementpdf from "../assets/documents/documentAgreement.pdf";
+import docRulespdf from "../assets/documents/documentRules.pdf";
+
+
 
 
 
@@ -23,17 +29,17 @@ const ForParents = () => {
             </div>
             <div className="forparents_rules">
                 <h4>Узнайте больше информации о правилах и ценах здесь:</h4>
-                <div className="forparents_rules_wrapper">
-                    <a href={docAgreement}>
+                <div className="forparents_rules_button">
+                    <a href={docAgreementpdf} target="_blank">
                         <div className="button_agreement">
-                            <img src="" alt="" />
+                            <img src={docIcon} alt="" />
                             <p>Договор с родителями</p>
                         </div>
                     </a>
 
-                    <a href={docRules}>
+                    <a href={docRulespdf} target="_blank">
                         <div className="button_rules">
-                            <img src="" alt="" />
+                            <img src={docIcon2} alt="" />
                             <p>Правила посещения занятий логопеда-дефектолога</p>
                         </div>
                     </a>

@@ -21,18 +21,87 @@
     margin-bottom: 20px;
 }
 
+.forparents_rules{
+    padding: 30px 0;
+    max-width: 1300px;
+    margin: 0 auto;
+}
 
-.forparents_rules_wrapper{
+.forparents_rules_button{
     display: flex;
+    justify-content: space-around;
+}
+
+.forparents_rules_button a{
+    text-decoration: none;
+}
+
+.forparents_rules_button img{
+    max-height: 50px;
 }
 
 .forparents_rules_wrapper a{
     display: inline-block;
 }
 
+.button_agreement{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    /* background-color: #A0ACAC; */
+    background: linear-gradient(45deg, rgba(142,200,200,1) 42%, rgba(248,168,197,1) 100%);
+    padding: 20px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    box-shadow: -3px -3px 5px 4px #9494947d inset;
+    transition: box-shadow .6s ease, transform 0.6s ease;
+}
+
+.button_agreement:hover{
+    box-shadow: -3px -8px 10px 4px #6060607d inset;
+    transform: scale(1.05);
+}
+
+.button_agreement p{
+    margin: 0;
+    padding-left: 20px;
+    color: black;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.button_rules{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    /* background-color: #A0ACAC; */
+    background: linear-gradient(45deg, rgba(142,200,200,1) 42%, rgba(248,168,197,1) 100%);
+    padding: 20px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    box-shadow: -3px -3px 5px 4px #9494947d inset;
+    transition: box-shadow .6s ease, transform 0.6s ease;
+}
+
+.button_rules:hover{
+    box-shadow: -3px -8px 10px 4px #6060607d inset;
+    transform: scale(1.05);
+}
+
+.button_rules p{
+    margin: 0;
+    padding-left: 20px;
+    color: black;
+    font-size: 19px;
+    font-weight: 600;
+}
+
 .parentWrapper{
     max-width: 1300px;
     display: flex;
+    margin: 0 auto;
 }
 
 .forparents_text{
@@ -48,7 +117,7 @@
 
 .forparents_text p{
     margin: 0;
-    padding: 30px 0;
+    padding: 25px 0;
     font-size: 18px;
 }
 
@@ -69,7 +138,7 @@
 }
 
 .margin_left{
-    margin-left: 200px;
+    margin-left: 230px;
     margin-top: -50px;
 }
 
