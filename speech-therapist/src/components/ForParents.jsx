@@ -24,7 +24,7 @@ const ForParents = () => {
         <div className="forparents_container">
             <div className="forparents_header_text">
                 <h3>Родителям</h3>
-                <img src={arrow1} alt="" />
+                <img src={arrow1} alt="arrowIcon" />
                 <h4>Договор, правила посещения центра</h4>
             </div>
             <div className="forparents_rules">
@@ -32,14 +32,14 @@ const ForParents = () => {
                 <div className="forparents_rules_button">
                     <a href={docAgreementpdf} target="_blank">
                         <div className="button_agreement">
-                            <img src={docIcon} alt="" />
+                            <img src={docIcon} alt="documentIcon" />
                             <p>Договор с родителями</p>
                         </div>
                     </a>
 
                     <a href={docRulespdf} target="_blank">
                         <div className="button_rules">
-                            <img src={docIcon2} alt="" />
+                            <img src={docIcon} alt="documentIcon" />
                             <p>Правила посещения занятий логопеда-дефектолога</p>
                         </div>
                     </a>
@@ -75,19 +75,19 @@ const ForParents = () => {
                 </div>
                 <div className="forparents_photo">
                     <div className="forparents_photo_section1">
-                        <img src={photoChildren1} alt="" />
+                        <img src={photoChildren1} alt="photoChildren" />
 
                         <div className="margin_left">
-                            <img src={photoChild} alt="" />
+                            <img src={photoChild} alt="photoChild" />
                         </div>
 
-                        <img src={photoChildren2} alt="" />
+                        <img src={photoChildren2} alt="photoChildren" />
 
                         <div className="margin_left">
-                            <img src={photoParents1} alt="" />
+                            <img src={photoParents1} alt="photoChildWithParent" />
                         </div>
 
-                        <img src={photoParents2} alt="" />
+                        <img src={photoParents2} alt="photoChildWithParent" />
                     </div>
                 </div>
             </div>
