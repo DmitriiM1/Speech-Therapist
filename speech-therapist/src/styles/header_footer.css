@@ -68,13 +68,21 @@ header{
 
 .header_address p{
     /* color: rgb(227, 233, 59); */
-    background: #E3E93B;
-    background: linear-gradient(to right, #E3E93B 0%, #e0bd20 100%);
+    background: #000000;
+    /* background: linear-gradient(to right, #000000 5%, #ffffff 75%); */
     -webkit-background-clip: text;
+    /* background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(177,5,2,1) 48%, rgba(175,1,1,1) 58%, rgba(74,0,12,1) 100%); */
     -webkit-text-fill-color: transparent;
     
     font-size: 18px;
     font-weight: 500;
+}
+
+.header_address p:hover{
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(255, 166, 0, 0.903) 39%, rgba(255, 166, 0, 0.904) 66%, rgba(0,0,0,1) 100%);
+    transition: background 2s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .header_logo{
