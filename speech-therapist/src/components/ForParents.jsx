@@ -9,8 +9,6 @@ import arrow1 from "../assets/forParentsIMG/down_icon.png"
 import docIcon from "../assets/forParentsIMG/document_icon.svg"
 import docIcon2 from "../assets/forParentsIMG/file_document_icon.svg"
 
-import docAgreement from "../assets/documents/docAgreement.docx";
-import docRules from "../assets/documents/docRules.docx";
 
 import docAgreementpdf from "../assets/documents/documentAgreement.pdf";
 import docRulespdf from "../assets/documents/documentRules.pdf";

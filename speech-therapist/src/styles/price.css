@@ -4,11 +4,43 @@
     padding-top: 100px;
 }
 
+.price_container h3{
+    text-align: center;
+    margin-top: 30px;
+}
+
 .price_container_wrapper{
     border: 5px solid #FE6F61;
     border-radius: 20px;
     margin-top: 20px;
     display: flex;
+}
+
+.price_container_wrapper table{
+    margin: 20px;
+}
+
+.price_container_wrapper th{
+    text-align: center;
+    border-bottom: 2px solid #FE6F61;
+}
+
+
+.border-left{
+    border-left: 2px solid #FE6F61;
+}
+
+.border-zero th{
+    border-bottom: 0;
+}
+
+.price_container_wrapper p{
+    margin: 0;
+    padding: 10px;
+}
+
+.price_container_wrapper li{
+
 }
 
 .individual{
@@ -50,13 +82,13 @@
 
 .span_colour_price{
     color: #9470DB;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 700;
 }
 
 .span_colour_time{
     color: #FFA500;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 700;
     margin-left: 20px;
 }
