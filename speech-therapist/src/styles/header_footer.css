@@ -101,10 +101,10 @@ header{
 
 .header_contact p{
     font-size: 18px;
-    background: #E3E93B;
+    /* background: #E3E93B;
     background: linear-gradient(to right, #E3E93B 0%, #e0bd20 100%);
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
 
 .nav_links{
