@@ -5,7 +5,7 @@ import mapMarker from "../assets/header_footerIMG/map_marker_icon2.svg"
 
 
 
-import { Link, useNavigate, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import VideoCarousel from "./PhotoCarousel";
 
 
@@ -37,8 +37,8 @@ const Header = () => {
                             </Link>
 
                             <div className="header_contact">
-                                <p>+7333-333-33-33</p>
-                                <p>test@gmail.com</p>
+                                <Link to="tel:(+79691109029)"><p>+7 (969) 110-90-29</p></Link>
+                                <Link to="mailto:test@gmail.com"><p>test@gmail.com</p></Link>
                             </div>
 
                         </div>

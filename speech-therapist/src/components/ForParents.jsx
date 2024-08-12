@@ -7,7 +7,7 @@ import photoChildren1 from "../assets/forParentsIMG/children-playing1.jpg";
 import photoChildren2 from "../assets/forParentsIMG/children-playing2.jpg";
 import arrow1 from "../assets/forParentsIMG/down_icon.png"
 import docIcon from "../assets/forParentsIMG/document_icon.svg"
-import docIcon2 from "../assets/forParentsIMG/file_document_icon.svg"
+
 
 
 import docAgreementpdf from "../assets/documents/documentAgreement.pdf";
@@ -28,14 +28,14 @@ const ForParents = () => {
             <div className="forparents_rules">
                 <h4>Узнайте больше информации о правилах и ценах здесь:</h4>
                 <div className="forparents_rules_button">
-                    <a href={docAgreementpdf} target="_blank">
+                    <a href={docAgreementpdf} target="_blank" rel="noopener noreferrer">
                         <div className="button_agreement">
                             <img src={docIcon} alt="documentIcon" />
                             <p>Договор с родителями</p>
                         </div>
                     </a>
 
-                    <a href={docRulespdf} target="_blank">
+                    <a href={docRulespdf} target="_blank" rel="noopener noreferrer">
                         <div className="button_rules">
                             <img src={docIcon} alt="documentIcon" />
                             <p>Правила посещения занятий логопеда-дефектолога</p>
