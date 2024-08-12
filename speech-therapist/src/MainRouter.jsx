@@ -7,6 +7,8 @@ import ForParents from "./components/ForParents";
 import Reviews from "./components/Reviews";
 import Price from "./components/Price";
 import SubForm from "./components/SubForm";
+import Contacts from "./components/Contacts";
+
 
 
 
@@ -22,6 +24,7 @@ function MainRouter() {
             <Price />
             <ForParents />
             <Reviews />
+            <Contacts />
           </>
         } />
         <Route path="/form" element={<SubForm />} />
