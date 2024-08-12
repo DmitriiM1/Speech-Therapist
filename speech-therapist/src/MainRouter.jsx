@@ -6,18 +6,26 @@ import Services from "./components/Services";
 import ForParents from "./components/ForParents";
 import Reviews from "./components/Reviews";
 import Price from "./components/Price";
+import SubForm from "./components/SubForm";
 
 
 
 function MainRouter() {
   return (
     <div>
-      <Header />
-      <News />
-      <Services />
-      <Price />
-      <ForParents />
-      <Reviews />
+      <Routes>
+        <Route path="/" element={
+          <>
+            <Header />
+            <News />
+            <Services />
+            <Price />
+            <ForParents />
+            <Reviews />
+          </>
+        } />
+        <Route path="/form" element={<SubForm />} />
+      </Routes>
     </div>
   );
 }

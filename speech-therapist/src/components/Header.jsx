@@ -85,9 +85,11 @@ const Header = () => {
                         <p className="home_text_first">Мир Речи</p>
                         <p className="home_text_second">Центр Логопедии и Дефектологии</p>
                     </div>
-                    <div className="home_button">
-                        <p>Записаться</p>
-                    </div>
+                    <Link to="/form">
+                        <div className="home_button">
+                            <p>Записаться</p>
+                        </div>
+                    </Link>
                 </div>
 
 
