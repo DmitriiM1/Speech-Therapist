@@ -1,0 +1,164 @@
+@media only screen and (max-width: 500px){
+
+    /* 
+        News component
+    */
+
+    .home_news{
+        /* flex-direction: column; */
+        display: block;
+        padding: 20px 10px 50px;
+    }
+
+    .home_news_photo{
+
+        margin-bottom: 450px;
+    }
+
+    .photo1 {
+        left: 0;
+        top: 0;
+    }
+    
+    .photo1 img{
+        max-height: 330px;
+        max-width: 330px;
+    }
+
+    .photo2 {
+        left: 90px;
+        top: 250px;
+    }
+    
+
+    /* 
+        Services component
+    */
+
+    .circle_logo1{
+        top: -4%;
+        left: 60%;
+    }
+
+    .services-container{
+        margin-bottom: 250px;
+    }
+
+    .circle_logo2{
+        display: none;
+    }
+    .circle_logo3{
+        display: none;
+    }
+
+    .circle-large{
+        width: 500px;
+        height: 500px;
+        top: 45%;
+        left: 65%;
+    }
+
+    .circle-large ul{
+        padding: 0;
+    }
+
+    .circle-large li{
+        list-style-type: none;
+    }
+
+    .circle-large p{
+        text-align: center;
+        max-width: 400px;
+        font-weight: 800;
+    }
+    
+    
+    .circle-medium{
+        width: 400px;
+        height: 400px;
+        top: 85%;
+        left: 50%;
+    }
+    
+    .circle-medium ul{
+        padding: 0;
+    }
+    
+    .circle-medium li{
+        list-style-type: none;
+    }
+    
+    .circle-medium p{
+        text-align: center;
+        font-weight: 800;
+    }
+
+
+
+    .circle-small{
+        width: 330px;
+        height: 330px;
+        top: 123%;
+        left: 50%;
+    }
+
+    .circle-small ul{
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .circle-small p{
+        text-align: center;
+        font-weight: 800;
+    }
+
+    /* 
+        Price component
+    */
+
+
+
+    .price_container_wrapper td{
+        border-bottom: 2px solid #FE6F61;
+    }
+
+    .price_container_wrapper p{
+        font-size: 18px;
+    }
+
+    .price_container_wrapper span{
+        margin: 0 auto;
+    }
+
+
+    /* 
+        ForParents component
+    */
+
+    .forparents_rules_button div{
+        margin: 10px 0;
+        max-width: 300px;
+    }
+
+    .forparents_photo{
+        display: none;
+    }
+
+    .parentWrapper{
+        flex-wrap: wrap;
+    }
+
+    .forparents_text img{
+        display: block;
+        max-height: 200px;
+        border-radius: 50%;
+        margin: 0 auto;
+    }
+
+    .forparents_text p{
+        padding: 10px;
+        font-size: 19px;
+    }
+
+
+}

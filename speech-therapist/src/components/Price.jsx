@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/price.css";
+import "../styles/mediaAdaptation.css";
 
 const Price = () => {
     return (

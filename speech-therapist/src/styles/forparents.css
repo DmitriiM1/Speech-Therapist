@@ -29,6 +29,7 @@
 
 .forparents_rules_button{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -121,6 +122,9 @@
     font-size: 18px;
 }
 
+.forparents_text img{
+    display: none;
+}
 .forparents_photo{
     max-width: 450px;
     margin-top: 30px;
