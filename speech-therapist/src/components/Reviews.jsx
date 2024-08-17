@@ -25,7 +25,7 @@ const Reviews = () => {
       partialVisibilityGutter: 30,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 464, min: 400 },
       items: 1,
       partialVisibilityGutter: 30,
     },
@@ -38,7 +38,7 @@ const Reviews = () => {
         additionalTransfrom={0}
         arrows
         autoPlay
-        autoPlaySpeed={5000}
+        autoPlaySpeed={8000}
         centerMode={false}
         containerClass="carousel-container"
         draggable
