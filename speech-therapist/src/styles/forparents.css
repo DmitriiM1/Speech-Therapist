@@ -50,6 +50,7 @@
     align-items: center;
     justify-content: center;
     width: 400px;
+    height: 97px;
     /* background-color: #A0ACAC; */
     background: linear-gradient(45deg, rgba(142,200,200,1) 42%, rgba(248,168,197,1) 100%);
     padding: 20px;
