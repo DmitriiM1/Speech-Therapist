@@ -183,3 +183,11 @@ header {
     font-size: 20px;
     color: white;
 }
+
+
+.footer_section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 15px;
+}

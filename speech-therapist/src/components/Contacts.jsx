@@ -1,9 +1,11 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "../styles/contacts.css";
-
-
+import vk from "../assets/header_footerIMG/vk_icon.png";
+import whatsapp from "../assets/header_footerIMG/whatsapp_icon.png";
+import call from "../assets/header_footerIMG/viber_icon.png";
+import email from "../assets/header_footerIMG/email_icon.png";
 
 const Contacts = () => {
 
@@ -22,12 +24,12 @@ const Contacts = () => {
     //         console.warn("Yandex map script already loaded.");
     //     }
     // }, []);
-    
-    return(
+
+    return (
         <div className="contact_container">
             <div className="contact_container_information">
-                <div>
-                    <p></p>
+                <div className="text_center">
+                    <p>Запишитесь на свою первую консультацию прямо сейчас!</p>
                     <Link to="/form">
                         <div className="home_button">
                             <p>Записаться</p>
@@ -35,24 +37,54 @@ const Contacts = () => {
                     </Link>
                 </div>
                 <div>
-                    <img src="" alt="" />
-                    <p>email</p>
-                </div>
-                <div>
-                    <img src="" alt="" />
-                    <p>call</p>
-                </div>
-                <div>
-                    <img src="" alt="" />
-                    <p>social</p>
+                    <div className="contact_section">
+                        <div>
+                            <img src={whatsapp} alt="whatsapp icon" />
+                        </div>
+                        <div className="contacts_margin_left">
+                            <p><span className="emailText">Н</span>аписать WhatsApp:</p>
+                            <a href="tel: 89691109029">8 (969)-110-90-29</a>
+                        </div>
+                    </div>
+                    <div className="contact_section">
+                        <div>
+                            <img src={email} alt="email icon" />
+                        </div>
+                        <div className="contacts_margin_left">
+                            <p><span className="emailText">Н</span>аписать на почту:</p>
+                            <a href="mailto:test@gmail.com">test@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div className="contact_section">
+                        <div>
+                            <img src={call} alt="call icon" />
+
+                        </div>
+                        <div className="contacts_margin_left">
+                            <p><span className="callText">П</span>озвонить:</p>
+                            <a href="tel: 89691109029">8 (969)-110-90-29</a>
+                        </div>
+                    </div>
+
+                    <div className="contact_section">
+                        <div>
+                            <img src={vk} alt="vk icon" />
+                        </div>
+                        <div className="contacts_margin_left">
+                            <p><span className="socialText">Мы</span> ВКонтакте</p>
+                            <a href="">Нажмите чтобы перейти</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div className="contact_container_map">
                 <div id="map" className="map_container">
-                <iframe 
-                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Aacf59434fc10acd97e90c59bffdd1f10c381f503d51355a65f6fe42167f005f7&amp;source=constructor" 
-                        width="500" 
-                        height="500" 
+                    <iframe
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3Aacf59434fc10acd97e90c59bffdd1f10c381f503d51355a65f6fe42167f005f7&amp;source=constructor"
+                        width="500"
+                        height="500"
                         title="Yandex Map"
                         sandbox="allow-scripts allow-same-origin allow-popups"
                     ></iframe>
