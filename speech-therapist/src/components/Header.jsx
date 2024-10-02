@@ -54,9 +54,9 @@ const Header = () => {
                             <li className="header_links">
                                 <ScrollLink to="for-parents" smooth={true} duration={500}><p>Родителям</p></ScrollLink>
                             </li>
-                            <li className="header_links">
+                            {/* <li className="header_links">
                                 <ScrollLink to="about" smooth={true} duration={500}><p>О Нас</p></ScrollLink>
-                            </li>
+                            </li> */}
                             <li className="header_links">
                                 <ScrollLink to="specialists" smooth={true} duration={500}><p>Наши Специалисты</p></ScrollLink>
                             </li>

@@ -1,9 +1,8 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Element } from "react-scroll";
 
 import "../styles/contacts.css";
-import vk from "../assets/header_footerIMG/vk_icon.png";
 import whatsapp from "../assets/header_footerIMG/whatsapp_icon.png";
 import call from "../assets/header_footerIMG/viber_icon.png";
 import email from "../assets/header_footerIMG/email_icon.png";

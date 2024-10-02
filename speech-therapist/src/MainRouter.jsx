@@ -9,6 +9,7 @@ import Price from "./components/Price";
 import SubForm from "./components/SubForm";
 import Contacts from "./components/Contacts";
 import Footer from "./components/Footer";
+import Staff from "./components/Staff";
 
 
 
@@ -22,6 +23,7 @@ function MainRouter() {
             <Header />
             <News />
             <Services />
+            <Staff />
             <Price />
             <ForParents />
             <Reviews />

@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/news.css"
-import newsPhoto4 from "../assets/servicesIMG/news_boy2.gif";
+import newsPhoto4 from "../assets/servicesIMG/news_boy2Optimized.gif";
 import newsPhoto5 from "../assets/servicesIMG/news_cubs.png";
 
 const News = () => {
