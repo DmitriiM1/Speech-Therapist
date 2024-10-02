@@ -60,6 +60,10 @@
         justify-content: center;
     }
 
+    .home_news_info{
+        margin-top: 200px;
+    }
+
     .circle_logo1 {
         left: 65%;
     }
@@ -309,7 +313,7 @@
 
 } */
 
-/* @media (max-width: 425px) {
+@media (max-width: 430px) {
 
     .home_news_info {
         margin-left: 25px;
@@ -335,7 +339,14 @@
         left: 24%;
     }
 
-} */
+    .forparents_photo{
+        display: none;
+    }
+    .forparents_photo_section1{
+        display: none;
+    }
+
+}
 
 @media (max-width: 414px) {
 
@@ -359,6 +370,8 @@
         top: 115%;
         left: 22%;
     }
+
+
 
 }
 

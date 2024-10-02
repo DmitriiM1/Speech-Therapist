@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../styles/reviews.css';
+import { Element } from "react-scroll";
 
 const Reviews = () => {
   const [reviews, setReviews] = useState([]);
@@ -32,39 +33,42 @@ const Reviews = () => {
   };
 
   return (
-    <div className="reviews-container">
-      <h3>Отзывы наших клиентов и высокие рейтинги на картах наглядно подтверждают непревзойденное качество наших услуг, демонстрируя профессионализм и эффективность работы нашего логопедического центра.</h3>
-      <Carousel
-        additionalTransfrom={0}
-        arrows
-        autoPlay
-        autoPlaySpeed={8000}
-        centerMode={false}
-        containerClass="carousel-container"
-        draggable
-        infinite={false}
-        keyBoardControl
-        minimumTouchDrag={80}
-        pauseOnHover
-        responsive={responsive}
-        rewind
-        rewindWithAnimation={false}
-        shouldResetAutoplay
-        showDots={false}
-        sliderClass=""
-        slidesToSlide={1}
-        swipeable
-      >
-        {reviews.map((review, index) => (
-          <div key={index} className="review">
-            <p><strong>{review.name}</strong></p>
-            <p>Оценка: {review.rating} из 5</p>
-            <p>{review.comment}</p>
-            <p><em>Дата: {review.date}</em></p>
-          </div>
-        ))}
-      </Carousel>
-    </div>
+    <Element name='reviews'>
+
+      <div className="reviews-container">
+        <h3>Отзывы наших клиентов и высокие рейтинги на картах наглядно подтверждают непревзойденное качество наших услуг, демонстрируя профессионализм и эффективность работы нашего логопедического центра.</h3>
+        <Carousel
+          additionalTransfrom={0}
+          arrows
+          autoPlay
+          autoPlaySpeed={8000}
+          centerMode={false}
+          containerClass="carousel-container"
+          draggable
+          infinite={false}
+          keyBoardControl
+          minimumTouchDrag={80}
+          pauseOnHover
+          responsive={responsive}
+          rewind
+          rewindWithAnimation={false}
+          shouldResetAutoplay
+          showDots={false}
+          sliderClass=""
+          slidesToSlide={1}
+          swipeable
+        >
+          {reviews.map((review, index) => (
+            <div key={index} className="review">
+              <p><strong>{review.name}</strong></p>
+              <p>Оценка: {review.rating} из 5</p>
+              <p>{review.comment}</p>
+              <p><em>Дата: {review.date}</em></p>
+            </div>
+          ))}
+        </Carousel>
+      </div>
+    </Element>
   );
 };
 

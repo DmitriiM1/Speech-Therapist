@@ -1,6 +1,6 @@
 .home_news {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 200px 0 200px 30px;
     max-width: 1300px;
     margin: 0 auto;
@@ -10,7 +10,7 @@
 .home_news_photo {
     position: relative;
     width: 500px;
-    height: 500px;
+    height: 300px;
 }
 
 .photo_wrapper {
@@ -20,8 +20,8 @@
 }
 
 .photo1 img{
-    max-width: 400px;
-    max-height: 400px;
+    /* max-width: 400px; */
+    height: 350px;
     border: 10px solid white;
 }
 

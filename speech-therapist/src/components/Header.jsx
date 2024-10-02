@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/header_footer.css";
-import logo from "../assets/header_footerIMG/Colorful Pastel Kindergarten Logo.png";
+import { Link as ScrollLink } from "react-scroll";
+
+import logo2 from "../assets/header_footerIMG/Colorful Pastel Kindergarten Logo (1).png"
 import mapMarker from "../assets/header_footerIMG/map_marker_icon2.svg"
 
 
@@ -24,7 +26,7 @@ const Header = () => {
                         <div className="header_info">
 
                             <div className="header_logo">
-                                <Link to="/"><img src={logo} alt="Мир Речи" /></Link>
+                                <Link to="/"><img src={logo2} alt="Мир Речи" /></Link>
                             </div>
 
                             <Link to="https://yandex.ru/maps/org/mir_rechi/104942983328/?ll=37.864169%2C55.677296&utm_source=share&z=16" target="_blank">
@@ -37,8 +39,8 @@ const Header = () => {
                             </Link>
 
                             <div className="header_contact">
-                                <Link to="tel:(+79691109029)"><p>+7 (969) 110-90-29</p></Link>
-                                <Link to="mailto:test@gmail.com"><p>test@gmail.com</p></Link>
+                                <Link to="tel:+79691109029"><p>+7 (969) 110-90-29</p></Link>
+                                <Link to="mailto:logoped_morozova@mail.ru"><p>logoped_morozova@mail.ru</p></Link>
                             </div>
 
                         </div>
@@ -47,34 +49,22 @@ const Header = () => {
                     <nav className="nav_links">
                         <ul className="header_list">
                             <li className="header_links">
-                                <Link to="">
-                                    <p>Услуги и Цены</p>
-                                </Link>
+                                <ScrollLink to="services" smooth={true} duration={500}><p>Услуги и Цены</p></ScrollLink>
                             </li>
                             <li className="header_links">
-                                <Link to="">
-                                    <p>Родителям</p>
-                                </Link>
+                                <ScrollLink to="for-parents" smooth={true} duration={500}><p>Родителям</p></ScrollLink>
                             </li>
                             <li className="header_links">
-                                <Link to="">
-                                    <p>О Нас</p>
-                                </Link>
+                                <ScrollLink to="about" smooth={true} duration={500}><p>О Нас</p></ScrollLink>
                             </li>
                             <li className="header_links">
-                                <Link to="">
-                                    <p>Наши Специалисты</p>
-                                </Link>
+                                <ScrollLink to="specialists" smooth={true} duration={500}><p>Наши Специалисты</p></ScrollLink>
                             </li>
                             <li className="header_links">
-                                <Link to="">
-                                    <p>Отзывы</p>
-                                </Link>
+                                <ScrollLink to="reviews" smooth={true} duration={500}><p>Отзывы</p></ScrollLink>
                             </li>
                             <li className="header_links">
-                                <Link to="">
-                                    <p>Контакты</p>
-                                </Link>
+                                <ScrollLink to="contacts" smooth={true} duration={500}><p>Контакты</p></ScrollLink>
                             </li>
                         </ul>
                     </nav>

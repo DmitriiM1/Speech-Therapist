@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/news.css"
-import newsPhoto1 from "../assets/servicesIMG/news_photo1.jpg";
-import newsPhoto2 from "../assets/servicesIMG/news_photo2.jpg";
+import newsPhoto4 from "../assets/servicesIMG/news_boy2.gif";
+import newsPhoto5 from "../assets/servicesIMG/news_cubs.png";
 
 const News = () => {
     return (
@@ -9,22 +9,22 @@ const News = () => {
             <div className="home_news">
                 <div className="home_news_photo">
                     <div className="photo_wrapper photo1">
-                        <img src={newsPhoto2} alt="News 2" />
+                        <img src={newsPhoto4} alt="News 2" />
                     </div>
                     <div className="photo_wrapper photo2">
-                        <img src={newsPhoto1} alt="News 1" />
+                        <img src={newsPhoto5} alt="News 1" />
                     </div>
                 </div>
                 <div className="home_news_info">
                     <div className="text_header">
-                        <p>Открыт набор в Группу "Супермозг" для детей 5-10 лет</p>
+                        <p>Открыт набор на курс "Читаем с удовольствием"</p>
                     </div>
                     <div className="text_body">
                         <ul>
-                            <li><p>Фокус и концентрация внимания</p></li>
-                            <li><p>Тренировка мощной памяти</p></li>
-                            <li><p>Развитие креативного мышления</p></li>
-                            <li><p>Речь. Произношение, словарный запас</p></li>
+                            <li><p>Обучение чтению с использованием кубиков Зайцева</p></li>
+                            <li><p>Игровой подход к изучению букв и слов</p></li>
+                            <li><p>Развитие навыков чтения через движение и ритм</p></li>
+                            <li><p>Формирование интереса к чтению с раннего возраста</p></li>
                         </ul>
                     </div>
                 </div>
@@ -34,10 +34,10 @@ const News = () => {
 
                 </div>
                 <div className="content2">
-                    <p>Курс: 2 месяца, занятия 2 раза в неделю.</p>
-                    <p>Цена: от 12.000 руб</p>
+                    <p>Мини группы по 4-5 человек</p>
+                    <p>Цена: от 4800р.</p>
 
-                </div>
+                </div>  
             </div>
         </div>
     )
