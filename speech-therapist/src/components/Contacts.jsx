@@ -93,6 +93,19 @@ const Contacts = () => {
                         ></iframe>
                     </div>
                 </div>
+
+                <div className="contact_container_map_phone">
+                    <div id="map" className="map_container">
+                        <iframe
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A9d37264fee63b677d64135fbbe982ddff4fa012d1a4195a0d62e447109ef5335&amp;source=constructor"
+                            width="340" 
+                            height="380" 
+                            frameborder="0"
+                            title="Yandex Map"
+                            sandbox="allow-scripts allow-same-origin allow-popups"
+                            ></iframe>
+                    </div>
+                </div>
             </div>
         </Element>
     );

@@ -34,11 +34,15 @@
     /* justify-content: center; */
 }
 
-.map_container {
+.contact_container_map_phone{
+    display: none;
+}
+
+/* .map_container {
     width: 500px;
     height: 500px;
     border: 1px solid black;
-}
+} */
 
 .contact_container_information{
     display: flex;
