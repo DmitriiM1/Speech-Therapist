@@ -67,13 +67,7 @@ const workers = [
             </ul>
         ],
         img: photo3,
-    },
-    //   {
-    //     id: 4,
-    //     name: '',
-    //     major: '',
-    //     img: '',
-    //   },
+    }
 ];
 
 const Staff = () => {

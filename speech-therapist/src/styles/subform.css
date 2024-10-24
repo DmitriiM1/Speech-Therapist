@@ -57,6 +57,15 @@
     border: 1px solid #ccc;
 }
 
+.form-group div[role="group"] {
+    display: inline-flex;
+    align-items: center;
+}
+
+.form-group div[role="group"] label {
+    margin-right: 15px; /* Space between each radio button label */
+}
+
 .error-message {
     color: red;
     font-size: 0.8em;

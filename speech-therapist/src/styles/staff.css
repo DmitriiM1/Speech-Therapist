@@ -13,13 +13,17 @@
     box-shadow: 4px 0px 16px -7px rgba(0, 0, 0, 0.75);
 }
 
+.row{
+    /* align-items: center; */
+    justify-content: center;
+}
+
 .worker-card:hover {
     transform: scale(1.05);
 }
 
 .card-img-wrapper {
     height: 250px;
-    /* Задайте желаемую высоту */
     overflow: hidden;
     position: relative;
 }

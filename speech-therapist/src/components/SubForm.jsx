@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
 import InputMask from 'react-input-mask';
+import axios from 'axios';
 
 
 const PhoneInput = ({ field, form }) => (
@@ -21,10 +22,13 @@ const PhoneInput = ({ field, form }) => (
             }
         }}
     >
-        {(inputProps) => <input {...inputProps} type="text" />}
+        {(inputProps) => <input {...inputProps} type="text" id="phone" />}
     </InputMask>
 );
 
+const t8123456789AAFmOBu2kLFmVZzxz9dtPwNzUVhofRF8gBI = process.env.REACT_APP_TELEGRAM_TOKEN;
+const CHAT_ID = process.env.REACT_APP_CHAT_ID;
+const URI_API = `https://api.telegram.org/bot${t8123456789AAFmOBu2kLFmVZzxz9dtPwNzUVhofRF8gBI}/sendMessage`;
 
 
 const validate = (values) => {
@@ -35,23 +39,54 @@ const validate = (values) => {
     }
 
     // Email validation
-    if (!values.email) {
-        errors.email = 'Required';
-    } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.(com|ru)$/i.test(values.email)) {
-        errors.email = 'Email must end with ".com" or ".ru"';
+    // if (!values.email) {
+    //     errors.email = 'Required';
+    // } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.(com|ru)$/i.test(values.email)) {
+    //     errors.email = 'Email must end with ".com" or ".ru"';
+    // }
+
+    if (!values.age) {
+        errors.age = 'Required';
     }
 
+    if (!values.specialist) {
+        errors.specialist = 'Required';
+    }
     // Phone number validation
     if (!values.phone) {
         errors.phone = 'Required';
     } else {
-        const cleanedPhone = values.phone.replace(/[-()]/g, ''); 
+        const cleanedPhone = values.phone.replace(/[-()]/g, '');
         if (!/^9\d{9}$/.test(cleanedPhone)) {
             errors.phone = 'Phone number must start with 9 and be 10 digits long';
         }
     }
 
     return errors;
+};
+
+const handleSubmit = async (values, { setSubmitting, resetForm }) => {
+    try {
+        // Use let instead of const to allow reassignment
+        let message = `<b>Новое сообщение от Мир Речи...</b>\n`;
+        message += `<b>Отправитель: </b> ${values.name}\n`;
+        message += `<b>Телефон: </b> ${values.phone}\n`;
+        message += `<b>Возраст ребенка: </b> ${values.age}\n`;
+        message += `<b>Специалист: </b> ${values.specialist}\n`;
+
+        // Send message to Telegram
+        await axios.post(URI_API, {
+            chat_id: CHAT_ID,
+            parse_mode: 'html',
+            text: message
+        });
+
+        alert('Message sent successfully to Telegram');
+        resetForm();
+    } catch (error) {
+        alert('Failed to send message: ' + error);
+    }
+    setSubmitting(false);
 };
 
 const SubForm = () => {
@@ -77,35 +112,62 @@ const SubForm = () => {
 
                         <div className="header_contact">
                             <Link to="tel:(+79691109029)"><p>+7 (969) 110-90-29</p></Link>
-                            <Link to="mailto:test@gmail.com"><p>test@gmail.com</p></Link>
+                            <Link to="mailto:logoped_morozova@mail.ru"><p>logoped_morozova@mail.ru</p></Link>
                         </div>
                     </div>
                 </div>
             </header>
 
             <Formik
-                initialValues={{ name: '', email: '', phone: '' }}
+                initialValues={{ name: '', age: '', specialist: '', phone: '' }}
                 validate={validate}
-                onSubmit={(values, { setSubmitting }) => {
-                    console.log(values);
-                    setSubmitting(false);
-                }}
+                onSubmit={handleSubmit}
             >
                 {({ isSubmitting }) => (
                     <Form className="form-content">
                         <div className="form-group">
                             <label htmlFor="name">Введите Ваше имя:</label>
-                            <Field type="text" name="name" />
+                            <Field type="text" name="name" id="name" />
                             <ErrorMessage name="name" component="div" className="error-message" />
                         </div>
                         <div className="form-group">
-                            <label htmlFor="email">Email адрес:</label>
-                            <Field type="email" name="email" />
-                            <ErrorMessage name="email" component="div" className="error-message" />
+                            <label htmlFor="age">Возраст ребёнка (1-15):</label>
+                            <Field as="select" name="age" id="age">
+                                <option value="" label="Выберите возраст" />
+                                {[...Array(15)].map((_, i) => (
+                                    <option key={i + 1} value={i + 1}>
+                                        {i + 1}
+                                    </option>
+                                ))}
+                            </Field>
+                            <ErrorMessage name="age" component="div" className="error-message" />
                         </div>
                         <div className="form-group">
+                            <label>Выберите специалиста:</label>
+                            <div role="group" aria-labelledby="specialist">
+                                <label>
+                                    <Field type="radio" name="specialist" value="логопед" />
+                                    Логопед
+                                </label>
+                                <label>
+                                    <Field type="radio" name="specialist" value="дефектолог" />
+                                    Дефектолог
+                                </label>
+                                <label>
+                                    <Field type="radio" name="specialist" value="нейропсихолог" />
+                                    Нейропсихолог
+                                </label>
+                            </div>
+                            <ErrorMessage name="specialist" component="div" className="error-message" />
+                        </div>
+                        {/* <div className="form-group">
+                            <label htmlFor="email">Email адрес:</label>
+                            <Field type="email" name="email" id="email" />
+                            <ErrorMessage name="email" component="div" className="error-message" />
+                        </div> */}
+                        <div className="form-group">
                             <label htmlFor="phone">Введите Ваш номер телефона:</label>
-                            <Field name="phone" component={PhoneInput} />
+                            <Field name="phone" component={PhoneInput} id="phone" />
                             <ErrorMessage name="phone" component="div" className="error-message" />
                         </div>
                         <button type="submit" disabled={isSubmitting}>
@@ -117,5 +179,7 @@ const SubForm = () => {
         </div>
     );
 }
+
+
 
 export default SubForm

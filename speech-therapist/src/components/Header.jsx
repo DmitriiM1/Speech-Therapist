@@ -9,6 +9,7 @@ import mapMarker from "../assets/header_footerIMG/map_marker_icon2.svg"
 
 import { Link } from 'react-router-dom';
 import VideoCarousel from "./PhotoCarousel";
+import Vacancies from "./Vacancies";
 
 
 
@@ -68,6 +69,7 @@ const Header = () => {
                             </li>
                         </ul>
                     </nav>
+                    <Vacancies />
                 </header>
 
                 <div className="home_content">

@@ -31,8 +31,13 @@ function MainRouter() {
             <Footer />
           </>
         } />
-        <Route path="/form" element={<SubForm />} />
-        
+        <Route path="/form" element={
+          <>
+            <SubForm />
+            <Footer />
+          </>
+        } />
+
       </Routes>
     </div>
   );
