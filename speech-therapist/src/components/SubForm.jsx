@@ -115,6 +115,15 @@ const SubForm = () => {
                             <Link to="mailto:logoped_morozova@mail.ru"><p>logoped_morozova@mail.ru</p></Link>
                         </div>
                     </div>
+
+                    <nav className="form_link">
+                        <ul className="form_list">
+                            <li className="form_links">
+                                <Link to="/" smooth={true} duration={500}><p>Главная Страница</p></Link>
+                            </li>
+                        </ul>
+                    </nav>
+
                 </div>
             </header>
 

@@ -1,7 +1,6 @@
 .staff_section {
     margin-top: 150px;
 }
-
 .worker-card {
     margin: 20px;
     position: relative;
@@ -12,22 +11,18 @@
     -moz-box-shadow: 4px 0px 16px -7px rgba(0, 0, 0, 0.75);
     box-shadow: 4px 0px 16px -7px rgba(0, 0, 0, 0.75);
 }
-
 .row{
-    /* align-items: center; */
+
     justify-content: center;
 }
-
 .worker-card:hover {
     transform: scale(1.05);
 }
-
 .card-img-wrapper {
     height: 250px;
     overflow: hidden;
     position: relative;
 }
-
 .card-img-wrapper img {
     object-fit: contain;
 
@@ -35,16 +30,6 @@
     width: 100%;
     transition: filter 0.3s ease;
 }
-
-.worker-card .appointment-btn {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-.worker-card:hover .appointment-btn {
-    opacity: 1;
+.appointment_button_section{
+    text-align: center;
 }

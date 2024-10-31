@@ -89,11 +89,13 @@ const Staff = () => {
                                             ))}
                                         </Card.Text>
                                     </div>
-                                    <Link to="/form">
-                                        <Button className="appointment-btn" variant="primary">
-                                            Записаться прямо сейчас
-                                        </Button>
-                                    </Link>
+                                    <div className="appointment_button_section">
+                                        <Link to="/form">
+                                            <Button className="appointment-btn" variant="primary">
+                                                Записаться прямо сейчас
+                                            </Button>
+                                        </Link>
+                                    </div>
                                 </Card.Body>
                             </Card>
                         </Col>
