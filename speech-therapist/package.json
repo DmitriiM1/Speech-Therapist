@@ -2,7 +2,7 @@
   "name": "speech-therapy",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DmitriiM1.github.io/speech-therapist",
+  "homepage": "https://dmitriim1.github.io/Speech-Therapist/speech-therapist",
   "proxy": "https://api.telegram.org",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
